@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background"
+        android:drawable="@drawable/edittext" /> <!-- Your custom background -->
+
+    <item android:right="1dp" android:left="1dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#22000000" /> <!-- Shadow color and opacity -->
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+</layer-list>
