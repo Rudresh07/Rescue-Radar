@@ -18,6 +18,8 @@ class OTP : AppCompatActivity() {
 
         binding?.getOtp?.setOnClickListener {
 
+            //implement backend to get otp details
+
             val intent = Intent(this,Choose_Langauge::class.java)
             startActivity(intent)
         }

@@ -3,23 +3,24 @@ package com.example.rescueradar
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import com.example.rescueradar.databinding.ActivityMainBinding
 import com.example.rescueradar.databinding.ActivityOtpBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        var binding:ActivityMainBinding? = null
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding?.root
-        setContentView(view)
+        // Set the content view to the splash screen layout
+        setContentView(R.layout.activity_main)
 
-        binding?.getOtp?.setOnClickListener {
-
-            val intent = Intent(this,OTP::class.java)
+        // Delay for a few seconds and then move to the next screen
+        Handler().postDelayed({
+            val intent = Intent(this, Phone_detail::class.java)
             startActivity(intent)
-        }
+            finish() // Close the main activity so the user can't go back to it
+        }, 3000) // Delay for 3 seconds (adjust as needed)
+
 
     }
 }

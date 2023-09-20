@@ -5,4 +5,10 @@
     <color name="orange">#EB801B</color>
     <color name="button">#12AB69</color>
     <color name="shadow">#AAAAAA</color>
+    <color name="lightGreen">#D9FBEE</color>
+    <color name="Blue">#92DAFF</color>
+    <color name="Red">#FF7E7E</color>
+    <color name="Lightgreen">#8BFF62</color>
+    <color name="Purple">#C882FF</color>
+    <color name="Orange">#E69060</color>
 </resources>

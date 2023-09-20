@@ -3,20 +3,20 @@ package com.example.rescueradar
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.rescueradar.databinding.ActivityChooseLangaugeBinding
+import com.example.rescueradar.databinding.ActivityPhoneDetailBinding
 
-class Choose_Langauge : AppCompatActivity() {
-    var binding: ActivityChooseLangaugeBinding? = null
+class Phone_detail : AppCompatActivity() {
+
+    var binding: ActivityPhoneDetailBinding? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityChooseLangaugeBinding.inflate(layoutInflater)
+        binding = ActivityPhoneDetailBinding.inflate(layoutInflater)
         val view = binding?.root
         setContentView(view)
 
-        binding?.Proceed?.setOnClickListener {
+        binding?.getOtp?.setOnClickListener {
 
-            val intent = Intent(this,Home::class.java)
+            val intent = Intent(this,OTP::class.java)
             startActivity(intent)
         }
     }
