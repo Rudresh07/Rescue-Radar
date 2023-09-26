@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,24 +16,22 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="130dp"
-            android:id="@+id/EmergencyReporting"
             android:backgroundTint="@color/Blue"
-            android:elevation="20dp"
+            app:cardElevation="10dp"
             android:layout_margin="10dp"
-            android:outlineAmbientShadowColor="@color/black"
-            android:outlineSpotShadowColor="@color/black"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:id="@+id/EmergencyReporting"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Emergency Reporting"
+                    android:text="@string/EmergencyReporting"
                     android:layout_weight="10"
                     android:layout_marginLeft="20dp"
                     android:textColor="@color/black"
@@ -61,9 +59,7 @@
             android:layout_height="130dp"
             android:id="@+id/OfflineEmergency"
             android:backgroundTint="@color/Red"
-            android:elevation="20dp"
-            android:outlineAmbientShadowColor="@color/black"
-            android:outlineSpotShadowColor="@color/black"
+            app:cardElevation="10dp"
             android:layout_margin="10dp"
             app:cardCornerRadius="10dp">
 
@@ -78,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="10"
                     android:layout_marginLeft="20dp"
-                    android:text="Offline Emergency \nReporting"
+                    android:text="@string/OfflineEmergencyReporting"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:textSize="18sp"/>
@@ -98,11 +94,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="130dp"
-            android:backgroundTint="@color/Lightgreen"
-            android:elevation="10dp"
+            android:backgroundTint="@color/Shadegreen"
+            app:cardElevation="10dp"
             android:id="@+id/NormalReporting"
-            android:outlineAmbientShadowColor="@color/black"
-            android:outlineSpotShadowColor="@color/black"
             android:layout_margin="10dp"
             app:cardCornerRadius="10dp">
 
@@ -117,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="10"
                     android:layout_marginLeft="20dp"
-                    android:text="Normal Reporting"
+                    android:text="@string/NormalReporting"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:textSize="18sp"/>
@@ -139,10 +133,8 @@
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:backgroundTint="@color/Orange"
-            android:elevation="20dp"
+            app:cardElevation="20dp"
             android:id="@+id/HelpMap"
-            android:outlineAmbientShadowColor="@color/black"
-            android:outlineSpotShadowColor="@color/black"
             android:layout_margin="10dp"
             app:cardCornerRadius="10dp">
 
@@ -155,7 +147,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Help Map"
+                    android:text="@string/HelpMap"
                     android:layout_weight="10"
                     android:layout_marginLeft="20dp"
                     android:textColor="@color/black"
@@ -175,47 +167,7 @@
         </androidx.cardview.widget.CardView>
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:backgroundTint="@color/Purple"
-            android:elevation="20dp"
-            android:id="@+id/Sos"
-            android:layout_margin="10dp"
-            android:outlineAmbientShadowColor="@color/black"
-            android:outlineSpotShadowColor="@color/black"
-            app:cardCornerRadius="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SOS"
-                    android:layout_weight="10"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="210dp"
-                    android:src="@drawable/arrow"
-                    />
-
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-
 
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>

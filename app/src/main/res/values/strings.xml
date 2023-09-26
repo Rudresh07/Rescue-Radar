@@ -1,5 +1,173 @@
 <resources>
     <string name="app_name">Rescue Radar</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="call100">Call Police</string>
+    <string name="callFirefighter">Call 101</string>
+    <string name="callambulance">Call 102</string>
+    <string name="mahilahelpline">Call 1091</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Profile">PROFILE</string>
+    <string name="EmergencyReporting">Emergency Reporting</string>
+    <string name="OfflineEmergencyReporting">Offline Emergency \nReporting</string>
+    <string name="NormalReporting">Normal Reporting</string>
+    <string name="HelpMap">Help Map</string>
+    <string name="SOS">SOS</string>
+    <string name="PrecautionaryMeasure">Precautionary Measure</string>
+    <string name="Flood">Flood</string>
+    <string name="Earthquack">Earthquack</string>
+    <string name="Fire">Fire</string>
+    <string name="Storm">Storm</string>
+    <string name="tsunami">Tsunami</string>
+    <string name="Home">Home</string>
+    <string name="Options">Options</string>
+    <string name="settings">Settings</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="Preferences">PREFERENCES</string>
+    <string name="Notification">Notification</string>
+    <string name="Langauge">Langauge</string>
+    <string name="Contactus">Contact Us</string>
+    <string name="Help">HELP</string>
+    <string name="Aboutus">About Us</string>
+    <string name="Faq">FAQ</string>
+    <string name="Feedback">Feedback</string>
+    <string name="ConfirmationMessage">Emergency Report has been sent. Help will arrive shortly.</string>
+    <string name="Shareapp">Share The App</string>
+    <string name="confirmation">Do you really want to report Emergency</string>
+    <string name="Popup">Do you really want to report Emergency? False claims may lead to jurisdicial cases</string>
+    <string name="FloodPrecaution"><![CDATA[<b>Do\'s:</b>\n\n
+1. Avoid building in flood-prone areas without elevation and reinforcement.\n\n
+2. Elevate furnace, water heater, and electric panel to prevent flood damage.\n\n
+3. Install "Check Valves" in sewer traps to avoid drain backup.\n\n
+4. Contact community officials about flood barriers in your area.\n\n
+5. Seal basement walls with waterproofing compounds.\n\n
+<b>If a flood is imminent:</b>\n\n
+6. Stay informed through radio or TV.\n\n
+7. Move to higher ground immediately if flash flooding is possible.\n\n
+8. Be cautious near flood-prone areas, even without typical rain warnings.\n\n
+<b>Preparing to evacuate:</b>\n\n
+9. Secure your home and bring in outdoor furniture.\n\n
+10. Turn off utilities as instructed, and disconnect electrical appliances.\n\n
+<b>When leaving your home:</b>\n\n
+11. Avoid walking through moving water; it can make you fall.\n\n
+12. Never drive into flooded areas; abandon your car and seek higher ground.]]></string>
+
+    <string name="FirePrecaution"><![CDATA[<b>Do\'s:</b>\n\n
+1. Avoid building in fire-prone areas without proper precautions.\n\n
+2. Elevate your home\'s fire safety by installing spark arresters on chimneys and stovepipes.\n\n
+3. Keep firefighting tools nearby when working in dry, grassy areas, including a garden hose, buckets of water, or a fire extinguisher.\n\n
+4. Store flammable materials such as firewood and propane at a safe distance from your home.\n\n
+5. Develop a family emergency plan that includes escape routes and a designated meeting point.\n\n
+<b>If a fire is imminent:</b>\n\n
+6. Monitor local news and weather reports for fire danger warnings.\n\n
+7. Ensure your phone is charged and ready to receive emergency notifications.\n\n
+8. If you receive an evacuation order, leave immediately and follow designated evacuation routes.\n\n
+<b>Preparing to evacuate:</b>\n\n
+9. Pack essential items such as identification, medications, important documents, and clothing.\n\n
+10. Turn off gas and electricity at the main switches or valves before leaving.\n\n
+11. Close all windows and doors to prevent drafts.\n\n
+<b>During evacuation:</b>\n\n
+12. Stay low to the ground if smoke is present; the air is cleaner near the floor.\n\n
+13. Cover your nose and mouth with a cloth to filter out smoke and ash.\n\n
+14. Do not return home until authorities declare it safe to do so.\n\n
+15. Be cautious of fallen power lines and other hazards when returning to your property.]]></string>
+
+    <string name="EarthquakeMeasure"><![CDATA[<b>Do\'s:</b>\n\n
+1. Secure heavy furniture and objects to prevent them from toppling over during an earthquake.\n\n
+2. Install earthquake-resistant bolts for your home\'s foundation and gas lines.\n\n
+3. Create an emergency kit with essential supplies, including food, water, and first-aid items.\n\n
+4. Develop a family emergency plan with communication and meeting points.\n\n
+5. Know how to shut off gas, electricity, and water in your home.\n\n
+<b>If an Earthquake Strikes:</b>\n\n
+6. Drop, Cover, and Hold On: Drop to the ground, take cover under a sturdy piece of furniture, and hold on until shaking stops.\n\n
+7. Stay indoors: Avoid going outside during the shaking as falling debris can be dangerous.\n\n
+8. If you are outside, move to an open area away from buildings, trees, streetlights, and utility wires.\n\n
+<b>After the Shaking Stops:</b>\n\n
+9. Check for injuries and administer first aid as necessary.\n\n
+10. Inspect your home for damage, especially gas leaks, electrical problems, and structural issues. If you smell gas, turn it off and leave your home.\n\n
+11. Listen to emergency broadcasts for updates and instructions.\n\n
+12. Avoid using the phone except for emergencies to keep lines open for first responders.\n\n
+<b>Evacuation:</b>\n\n
+13. If your home is unsafe, follow evacuation orders and move to a safe location.\n\n
+14. Use caution when driving, and be aware of road hazards, including fallen debris and damaged roads.\n\n
+15. Stay informed and follow the guidance of local authorities for safety instructions.\n\n]]></string>
+
+    <string name="StormPrecaution"><![CDATA[<b>Do\'s:</b>\n\n
+1. Secure outdoor objects and furniture to prevent them from becoming projectiles during a storm.\n\n
+2. Reinforce windows and doors with storm shutters or impact-resistant glass.\n\n
+3. Create an emergency kit with essential supplies, including non-perishable food, water, flashlights, and batteries.\n\n
+4. Develop a family emergency plan with communication and meeting points.\n\n
+5. Stay informed about storm warnings and updates through reliable sources like weather alerts and local authorities.\n\n
+<b>If a Storm is Imminent:</b>\n\n
+6. Listen to weather alerts and follow the advice of local authorities.\n\n
+7. Seek shelter in a safe location, away from windows and doors.\n\n
+8. Stay indoors and avoid going outside during the storm, as flying debris and strong winds can be dangerous.\n\n
+<b>After the Storm:</b>\n\n
+9. Check for injuries and provide first aid as needed.\n\n
+10. Inspect your home for damage, including structural issues, gas leaks, and electrical problems. If you smell gas, turn it off and leave your home.\n\n
+11. Use a flashlight to examine your surroundings; avoid using candles or open flames as there may be gas leaks or flammable materials present.\n\n
+12. Listen to emergency broadcasts for updates and instructions.\n\n
+<b>Evacuation:</b>\n\n
+13. If authorities issue evacuation orders, leave your home and follow designated evacuation routes to a safe location.\n\n
+14. Be cautious while driving and watch for road hazards, including fallen trees and flooded areas.\n\n
+15. Stay informed and adhere to the guidance of local authorities for safety precautions and instructions.\n\n]]></string>
+
+
+    <string name="faq_1_question"><b>What is the purpose of this application?</b></string>
+    <string name="faq_1_answer">This application is designed to help coordinate the efforts of rescue agencies during natural or man-made disasters, making it easier for them to provide aid effectively.</string>
+
+
+    <string name="faq_2_question"><b>Who can use this app?</b></string>
+    <string name="faq_2_answer">Rescue agencies and individuals in need of assistance can use this app. Rescue agencies can register their information, while individuals can request help.</string>
+
+
+    <string name="faq_3_question"><b>How do rescue agencies register on the app?</b></string>
+    <string name="faq_3_answer">Rescue agencies can register by providing their information, including location, contact details, and areas of expertise. They can do this manually or through automated GPS tracking.</string>
+
+
+    <string name="faq_4_question"><b>Is the app available on both Android and iOS devices?</b></string>
+    <string name="faq_4_answer">No, the app is currently available on Android only.</string>
+
+
+    <string name="faq_5_question"><b>Can individuals request help from rescue agencies through the app?</b></string>
+    <string name="faq_5_answer">Yes, individuals can use the app to send requests for assistance to nearby rescue agencies.</string>
+
+
+    <string name="faq_6_question"><b>How can I find rescue agencies in my area?</b></string>
+    <string name="faq_6_answer">You can search for rescue agencies by criteria such as location, expertise, available resources, and type of disaster response. The app also provides a map view with agency locations.</string>
+
+
+    <string name="faq_7_question"><b>Is my personal information safe when using the app?</b></string>
+    <string name="faq_7_answer">Yes, the app implements strong security measures to protect user data and agency information. It complies with privacy and data protection regulations.</string>
+
+
+    <string name="faq_8_question"><b>Can rescue agencies communicate and collaborate through the app?</b></string>
+    <string name="faq_8_answer">Yes, rescue agencies can send alerts, requests for assistance, and collaborate on shared resources directly through the app\'s messaging and communication features.</string>
+
+
+    <string name="faq_9_question"><b>How can I report issues or provide feedback about the app?</b></string>
+    <string name="faq_9_answer">You can report issues and provide feedback through the app\'s support or contact channels. Your input is valuable for improving the app.</string>
+
+
+    <string name="faq_10_question"><b>What should I do in case of an emergency?</b></string>
+    <string name="faq_10_answer">In case of an emergency, please call your local emergency services number. The app is designed to complement, not replace, existing emergency services.</string>
+
+
+    <string name="faq_11_question"><b>Can I volunteer with rescue agencies through the app?</b></string>
+    <string name="faq_11_answer">The app may provide information about volunteer opportunities with rescue agencies, but the actual volunteering process would typically be coordinated outside the app.</string>
+
+
+    <string name="faq_13_question"><b>How can I help improve disaster response in my community?</b></string>
+    <string name="faq_13_answer">By using the app and encouraging local rescue agencies to register, you can contribute to better disaster response and coordination in your community.</string>
+
+
+    <string name="faq_14_question"><b>Is the app free to download and use?</b></string>
+    <string name="faq_14_answer">Yes, the app is free to download and use for both rescue agencies and individuals.</string>
+
+
+    <string name="faq_15_question"><b>Are there any offline features for use in areas with limited connectivity during disasters?</b></string>
+    <string name="faq_15_answer">The app may include some offline features for basic functionality in areas with limited connectivity, but it primarily relies on an internet connection for real-time coordination.</string>
+
+
+
+
 </resources>

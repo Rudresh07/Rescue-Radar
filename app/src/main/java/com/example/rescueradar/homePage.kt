@@ -1,10 +1,18 @@
 package com.example.rescueradar
 
+import android.app.Dialog
+import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.LinearLayout
+import android.widget.TextView
+import androidx.cardview.widget.CardView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,8 +41,51 @@ class homePage : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val view = inflater.inflate(R.layout.fragment_home_page, container, false)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_page, container, false)
+        val onlineEmergency = view?.findViewById<LinearLayout>(R.id.EmergencyReporting)
+        val offlineReporting = view?.findViewById<CardView>(R.id.OfflineEmergency)
+        val normalReporting = view?.findViewById<CardView>(R.id.NormalReporting)
+        val HelpMap = view?.findViewById<CardView>(R.id.HelpMap)
+        val Alertmessage = getString(R.string.Popup)
+
+        fun navigateToNextScreen() {
+            val intent = Intent(requireActivity(), choose_disaster_type::class.java)
+            startActivity(intent)
+
+        }
+        onlineEmergency?.setOnClickListener {
+
+            // Inside your Fragment class
+
+                // Create the dialog
+                val dialog = Dialog(requireActivity()).apply {
+                    setContentView(R.layout.coustom_dailogue)
+
+                    // Find the button in the layout
+                    val dialogButton = findViewById<Button>(R.id.okay)
+                    val message = findViewById<TextView>(R.id.tvalertmsg)
+
+                    message.text = Alertmessage
+
+                    // Set a click listener for the button
+                    dialogButton.setOnClickListener {
+                        // Dismiss the dialog
+                        dismiss()
+
+                        // Navigate to the next screen (replace with your own logic)
+                        navigateToNextScreen()
+                    }
+                }
+
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+                // Show the dialog
+                dialog.show()
+
+
+        }
+
+        return view
     }
 
     companion object {

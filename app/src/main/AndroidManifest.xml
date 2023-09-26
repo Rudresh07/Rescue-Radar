@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,20 +21,46 @@
         android:theme="@style/Theme.RescueRadar"
         tools:targetApi="31">
         <activity
-            android:name=".Home"
+            android:name=".AboutUs"
             android:exported="false" />
+        <activity
+            android:name=".FAQ"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".editProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Precautionary_Measure"
+            android:exported="false" />
+        <activity
+            android:name=".choose_disaster_type"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Choose_userType"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Phone_detail"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Choose_Langauge"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".OTP"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

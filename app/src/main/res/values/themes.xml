@@ -3,6 +3,10 @@
     <style name="Base.Theme.RescueRadar" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/button</item>
+
+        <!-- Customize the accent color -->
+        <item name="colorAccent">@color/lightGreen</item>
     </style>
 
     <style name="Theme.RescueRadar" parent="Base.Theme.RescueRadar" />

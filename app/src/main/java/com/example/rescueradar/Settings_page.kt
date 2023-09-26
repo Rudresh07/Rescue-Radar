@@ -1,10 +1,15 @@
 package com.example.rescueradar
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.Toast
+import androidx.cardview.widget.CardView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,8 +38,46 @@ class Settings_page : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val view = inflater.inflate(R.layout.fragment_settings_page, container, false)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings_page, container, false)
+
+        val editProfile = view.findViewById<TextView>(R.id.editprofile)
+        val changeLangauge = view.findViewById<TextView>(R.id.langauge)
+        val FAQquestion = view.findViewById<CardView>(R.id.faq)
+
+
+
+
+
+        editProfile.setOnClickListener {
+
+            starteditProfile()
+        }
+
+        changeLangauge.setOnClickListener {
+
+            startchangeLangauge()
+        }
+
+        FAQquestion.setOnClickListener {
+            val intent = Intent(requireActivity(),FAQ::class.java)
+            Toast.makeText(requireActivity(), "you clicked me", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+        }
+
+
+
+
+        return view
+    }
+
+    private fun startchangeLangauge() {
+
+    }
+
+    private fun starteditProfile() {
+        val intent = Intent(requireActivity(),editProfile::class.java)
+        startActivity(intent)
     }
 
     companion object {
