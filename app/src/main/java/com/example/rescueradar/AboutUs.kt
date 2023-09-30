@@ -11,5 +11,9 @@ class AboutUs : AppCompatActivity() {
 
         var textAboutUs = findViewById<TextView>(R.id.aboutusText)
         //create a string for about us and implement it to the this page
+
+        val aboutusText = getString(R.string.Aboutus)
+
+        textAboutUs.text = aboutusText
     }
 }

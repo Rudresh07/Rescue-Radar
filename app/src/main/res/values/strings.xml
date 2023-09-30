@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Rescue Radar</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="call100">Call Police</string>
+    <string name="call100">Call 100</string>
     <string name="callFirefighter">Call 101</string>
     <string name="callambulance">Call 102</string>
     <string name="mahilahelpline">Call 1091</string>
@@ -166,8 +165,6 @@
 
     <string name="faq_15_question"><b>Are there any offline features for use in areas with limited connectivity during disasters?</b></string>
     <string name="faq_15_answer">The app may include some offline features for basic functionality in areas with limited connectivity, but it primarily relies on an internet connection for real-time coordination.</string>
-
-
 
 
 </resources>

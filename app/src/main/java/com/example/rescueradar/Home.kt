@@ -1,6 +1,7 @@
 package com.example.rescueradar
 
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -68,6 +69,11 @@ class Home : AppCompatActivity() {
         }
         binding?.optionFrag?.setOnClickListener {
             replaceFragment(Option_page())
+        }
+        binding?.Logoutuser?.setOnClickListener{
+            val intent = Intent(this,Choose_userType::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 

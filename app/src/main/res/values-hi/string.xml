@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Rescue Radar</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="call100">कॉल 100</string>
     <string name="callFirefighter">कॉल 101</string>
     <string name="callambulance">कॉल 102</string>

@@ -8,6 +8,10 @@
         <!-- Customize the accent color -->
         <item name="colorAccent">@color/lightGreen</item>
     </style>
+    <style name="MyStatusBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/darkGreen2</item>
+    </style>
+
 
     <style name="Theme.RescueRadar" parent="Base.Theme.RescueRadar" />
 </resources>

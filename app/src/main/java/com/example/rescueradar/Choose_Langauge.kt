@@ -3,11 +3,13 @@ package com.example.rescueradar
 import android.content.Intent
 import android.content.SharedPreferences
 import android.content.res.Configuration
+import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.PopupMenu
 import com.example.rescueradar.databinding.ActivityChooseLangaugeBinding
@@ -19,9 +21,13 @@ class Choose_Langauge : AppCompatActivity() {
     private lateinit var popupMenu: PopupMenu
     private lateinit var sharedPreferences: SharedPreferences
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityChooseLangaugeBinding.inflate(layoutInflater)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.statusBarColor = resources.getColor(R.color.darkGreen2, theme)
+        }
         val view = binding?.root
         setContentView(view)
 
@@ -61,6 +67,7 @@ class Choose_Langauge : AppCompatActivity() {
         binding?.Proceed?.setOnClickListener {
             val intent = Intent(this, Home::class.java)
             startActivity(intent)
+            finish()
         }
     }
 

@@ -21,6 +21,24 @@
         android:theme="@style/Theme.RescueRadar"
         tools:targetApi="31">
         <activity
+            android:name=".EmergencyCases"
+            android:exported="false" />
+        <activity
+            android:name=".Register_new_Agency"
+            android:exported="false" />
+        <activity
+            android:name=".DIstrictAdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".loginAsAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Choose_User"
+            android:exported="false" />
+        <activity
             android:name=".AboutUs"
             android:exported="false" />
         <activity

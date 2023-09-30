@@ -1,92 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AboutUs">
+<!-- this page is hardcoded i need to fix it-->
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/statusbar"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:backgroundTint="@color/button"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical">
+      <androidx.cardview.widget.CardView
+          android:id="@+id/statusbar"
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:backgroundTint="@color/button">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="start"
-                android:orientation="horizontal">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical">
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="15dp"
-                    android:src="@drawable/locimage" />
-            </LinearLayout>
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="start"
+                  android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="20"
-                android:gravity="center"
-                android:layout_marginRight="30dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/tv1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rescue"
-                    android:textSize="32sp"
-                    android:textStyle="bold"
-                    android:layout_marginStart="30dp"
-                    android:textColor="@color/lightGreen" />
+                  <ImageView
+                      android:layout_width="40dp"
+                      android:layout_height="40dp"
+                      android:layout_marginStart="15dp"
+                      android:src="@drawable/locimage" />
+              </LinearLayout>
 
-                <TextView
-                    android:id="@+id/tv2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Radar"
-                    android:layout_marginStart="5dp"
-                    android:textColor="@color/orange"
-                    android:textSize="32sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="20"
+                  android:gravity="center"
+                  android:layout_marginRight="30dp"
+                  android:orientation="horizontal">
+                  <TextView
+                      android:id="@+id/tv1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Rescue"
+                      android:textSize="32sp"
+                      android:textStyle="bold"
+                      android:layout_marginStart="30dp"
+                      android:textColor="@color/lightGreen" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="end"
-                android:layout_marginEnd="15dp"
-                android:orientation="vertical">
-                <ImageView
-                    android:id="@+id/changeLangauge"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:src="@drawable/translate" />
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                  <TextView
+                      android:id="@+id/tv2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Radar"
+                      android:layout_marginStart="5dp"
+                      android:textColor="@color/orange"
+                      android:textSize="32sp"
+                      android:textStyle="bold" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="end"
+                  android:layout_marginEnd="15dp"
+                  android:orientation="vertical">
+                  <ImageView
+                      android:id="@+id/changeLangauge"
+                      android:layout_width="35dp"
+                      android:layout_height="35dp"
+                      android:src="@drawable/translate" />
+              </LinearLayout>
+          </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/statusbar"
-        android:text="Aboutus here"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="*About Us*\n
+
+Welcome to RescurRadar, a cutting-edge platform designed to revolutionize disaster response and emergency management. We are committed to ensuring the safety and well-being of individuals and communities during natural and man-made calamities by providing real-time access to vital information and resources.
+
+\n*Our Mission*\n
+
+At RescurRadar, our mission is simple yet crucial: to save lives and minimize the impact of disasters. We believe that in times of crisis, every second counts. Our goal is to empower both rescue agencies and the public with the tools they need to make informed decisions and take swift action when disaster strikes.
+
+\n*Who We Are*\n
+
+We are a dedicated team of technologists, disaster management experts, and innovators passionate about harnessing the power of technology to improve disaster response efforts. With a deep understanding of the challenges faced during emergencies, we have developed a robust and user-friendly platform that connects all relevant rescue agencies and facilitates efficient communication and collaboration.
+
+\n*What We Offer*\n
+
+- \n*Comprehensive Registration*:\n RescurRadar serves as a centralized hub where all rescue agencies can register and provide crucial information about their organization, capabilities, and contact details.
+
+- \n*Real-Time Location Data*:\n Our platform displays the real-time locations of registered rescue agencies during emergencies, ensuring that help is always just a click away.
+
+- \n*Immediate Assistance*:\n Users can request assistance directly from nearby rescue agencies through our application, streamlining the response process.
+
+- \n*Volunteer Opportunities*:\n We enable individuals to volunteer their services during crises, fostering a sense of community and support.
+
+- \n*Critical Updates*:\n Stay informed with the latest developments and updates related to ongoing rescue operations and disaster situations.
+
+- \n*Multi-Language Support*:\nRescurRadar is designed to be accessible to a diverse audience, offering support in multiple languages.
+
+\n*Your Safety, Our Priority*\n
+
+Your safety is our top priority. We understand the importance of timely and effective disaster response, and we are dedicated to providing a tool that enhances the capabilities of rescue agencies and empowers individuals to take action during emergencies.
+
+\n*Join Us in Building a Safer Future*\n
+
+We believe that together, we can build a safer and more resilient future. We invite all rescue agencies to join us in our mission to improve disaster response efforts and ensure that no one is left behind during times of crisis. Let's work hand in hand to save lives and protect our communities.
+
+Thank you for choosing RescurRadar as your trusted partner in disaster management. Together, we can make a difference when it matters most."
         android:id="@+id/aboutusText"
         android:textSize="18sp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
+</LinearLayout>
