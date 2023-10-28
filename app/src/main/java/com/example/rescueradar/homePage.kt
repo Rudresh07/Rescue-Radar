@@ -25,17 +25,6 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class homePage : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,7 +34,6 @@ class homePage : Fragment() {
         // Inflate the layout for this fragment
         val onlineEmergency = view?.findViewById<LinearLayout>(R.id.EmergencyReporting)
         val offlineReporting = view?.findViewById<CardView>(R.id.OfflineEmergency)
-        val normalReporting = view?.findViewById<CardView>(R.id.NormalReporting)
         val HelpMap = view?.findViewById<CardView>(R.id.HelpMap)
         val Alertmessage = getString(R.string.Popup)
 
@@ -53,7 +41,17 @@ class homePage : Fragment() {
             val intent = Intent(requireActivity(), choose_disaster_type::class.java)
             startActivity(intent)
 
+
         }
+
+
+
+        HelpMap?.setOnClickListener {
+            val intent = Intent(requireActivity(), user_Map::class.java)
+            startActivity(intent)
+        }
+
+
         onlineEmergency?.setOnClickListener {
 
             // Inside your Fragment class
@@ -84,6 +82,43 @@ class homePage : Fragment() {
 
 
         }
+
+        offlineReporting?.setOnClickListener {
+
+            // todo i have to implement the feature that a message to admin is sent automatically
+
+            // Inside your Fragment class
+
+            // Create the dialog
+            val dialog = Dialog(requireActivity()).apply {
+                setContentView(R.layout.coustom_dailogue)
+
+                // Find the button in the layout
+                val dialogButton = findViewById<Button>(R.id.okay)
+                val message = findViewById<TextView>(R.id.tvalertmsg)
+
+                message.text = Alertmessage
+
+                // Set a click listener for the button
+                dialogButton.setOnClickListener {
+                    // Dismiss the dialog
+                    dismiss()
+
+                    // Navigate to the next screen (replace with your own logic)
+                    navigateToNextScreen()
+
+                }
+            }
+
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            // Show the dialog
+            dialog.show()
+
+
+        }
+
+
+
 
         return view
     }

@@ -67,9 +67,7 @@ class Home : AppCompatActivity() {
 
             replaceFragment(Settings_page())
         }
-        binding?.optionFrag?.setOnClickListener {
-            replaceFragment(Option_page())
-        }
+
         binding?.Logoutuser?.setOnClickListener{
             val intent = Intent(this,Choose_userType::class.java)
             startActivity(intent)

@@ -1,11 +1,15 @@
 package com.example.rescueradar
 
+import android.app.Dialog
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -43,7 +47,39 @@ class Settings_page : Fragment() {
 
         val editProfile = view.findViewById<TextView>(R.id.editprofile)
         val changeLangauge = view.findViewById<TextView>(R.id.langauge)
-        val FAQquestion = view.findViewById<CardView>(R.id.faq)
+        val FAQquestion = view.findViewById<TextView>(R.id.faq)
+        val Logout = view.findViewById<TextView>(R.id.logout)
+
+
+
+
+        Logout.setOnClickListener {
+
+
+            val dialog = Dialog(requireActivity()).apply {
+                setContentView(R.layout.coustom_dailogue)
+
+                // Find the button in the layout
+                val dialogButton = findViewById<Button>(R.id.okay)
+                val message = findViewById<TextView>(R.id.tvalertmsg)
+
+                message.text = "Do you really want to logout"
+
+                // Set a click listener for the button
+                dialogButton.setOnClickListener {
+                    // Dismiss the dialog
+                    dismiss()
+
+                    // Navigate to logout option
+
+
+                }
+            }
+
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            // Show the dialog
+            dialog.show()
+        }
 
 
 
@@ -61,7 +97,6 @@ class Settings_page : Fragment() {
 
         FAQquestion.setOnClickListener {
             val intent = Intent(requireActivity(),FAQ::class.java)
-            Toast.makeText(requireActivity(), "you clicked me", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
 

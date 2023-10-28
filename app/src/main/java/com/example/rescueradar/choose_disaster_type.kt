@@ -79,10 +79,7 @@ class choose_disaster_type : AppCompatActivity() {
         }}
 
     private fun navigateToPreviousScreen() {
-        val intent = Intent(this,Home::class.java)
 
-        intent.putExtra("FlagValue",true)
-        startActivity(intent)
         finish()
     }
 }

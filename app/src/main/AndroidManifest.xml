@@ -9,6 +9,9 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +23,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RescueRadar"
         tools:targetApi="31">
+        <activity
+            android:name=".Admin_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".user_Map"
+            android:exported="false" />
         <activity
             android:name=".EmergencyCases"
             android:exported="false" />
@@ -36,21 +45,17 @@
             android:name=".loginAsAdmin"
             android:exported="false" />
         <activity
-            android:name=".Choose_User"
-            android:exported="false" />
-        <activity
-            android:name=".AboutUs"
-            android:exported="false" />
-        <activity
             android:name=".FAQ"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".editProfile"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Precautionary_Measure"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".choose_disaster_type"
             android:exported="false"

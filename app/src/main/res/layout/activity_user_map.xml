@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
-
-    <!-- Top CardView -->
+    tools:context=".user_Map">
     <androidx.cardview.widget.CardView
         android:id="@+id/statusbar"
         android:layout_width="match_parent"
@@ -64,34 +61,92 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-           <LinearLayout
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_weight="1"
-               android:gravity="end"
-               android:layout_marginEnd="15dp"
-               android:orientation="vertical">
-               <ImageView
-                   android:id="@+id/Logoutuser"
-                   android:layout_width="35dp"
-                   android:layout_height="35dp"
-                   android:src="@drawable/logout" />
-           </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/Logoutuser"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/logout" />
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Fragment Container -->
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/statusbar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottomCardView"
-        android:name="com.example.rescueradar.homePage" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp">
 
-    <!-- Bottom CardView -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="District:"
+                android:textColor="@color/black"/>
+
+
+
+            <!-- here i need to implement spinner for selection of district-->
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="150dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Filter:"
+                android:textColor="@color/black"/>
+
+
+
+            <!-- here i need to implement spinner for selection of emergency-->
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <!-- here i need to implement map for help-->
+
+
+
+
+
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -161,4 +216,6 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

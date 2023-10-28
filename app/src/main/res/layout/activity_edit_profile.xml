@@ -200,9 +200,9 @@
                     android:backgroundTint="@color/button">
 
                     <Button
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="match_parent"
-                        android:text="UPDATE"
+                        android:text=" SAVE"
                         android:id="@+id/getOtp"
                         android:gravity="center"
                         android:backgroundTint="@color/button"

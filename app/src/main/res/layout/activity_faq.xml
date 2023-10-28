@@ -73,7 +73,7 @@
                     android:id="@+id/changeLangauge"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:src="@drawable/translate" />
+                    android:src="@drawable/logout" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

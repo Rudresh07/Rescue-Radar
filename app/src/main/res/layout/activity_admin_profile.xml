@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
-
-    <!-- Top CardView -->
+    tools:context=".Admin_Profile">
     <androidx.cardview.widget.CardView
         android:id="@+id/statusbar"
         android:layout_width="match_parent"
@@ -64,34 +61,135 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-           <LinearLayout
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_weight="1"
-               android:gravity="end"
-               android:layout_marginEnd="15dp"
-               android:orientation="vertical">
-               <ImageView
-                   android:id="@+id/Logoutuser"
-                   android:layout_width="35dp"
-                   android:layout_height="35dp"
-                   android:src="@drawable/logout" />
-           </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/logout" />
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Fragment Container -->
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment1"
+
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/statusbar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottomCardView"
-        android:name="com.example.rescueradar.homePage" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <!-- Bottom CardView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workforce"
+            android:layout_margin="10dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Airforce:"
+                       android:textSize="20sp"
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="5dp"
+                       android:text="10"
+                       android:id="@+id/airforce_number"
+                       android:textSize="20sp"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Doctors:"
+                       android:textSize="20sp"
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="5dp"
+                       android:text="5"
+                       android:id="@+id/doctor_number"
+                       android:textSize="20sp"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Police:"
+                       android:textSize="20sp"
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="5dp"
+                       android:text="35"
+                       android:id="@+id/police_number"
+                       android:textSize="20sp"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+
+
+
+
+
+           </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -130,14 +228,14 @@
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <!--option icon-->
+
 
 
 
             <!-- Settings Item -->
 
             <LinearLayout
-                android:id="@+id/settingFrag"
+                android:id="@+id/mapfrag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -149,16 +247,18 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginRight="5dp"
-                    android:src="@drawable/setting" />
+                    android:src="@drawable/map" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/settings"
+                    android:text="Map"
                     android:textColor="@color/lightGreen"
                     android:textSize="14sp" />
             </LinearLayout>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
