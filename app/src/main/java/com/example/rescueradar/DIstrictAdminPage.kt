@@ -30,6 +30,9 @@ class DIstrictAdminPage : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding?.mapfrag?.setOnClickListener {
+            replaceFragment(Map_Fragment())
+        }
 
 
         }

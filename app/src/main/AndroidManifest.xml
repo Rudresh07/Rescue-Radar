@@ -23,27 +23,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RescueRadar"
         tools:targetApi="31">
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/map_Api_Key" />
+
+
         <activity
             android:name=".Admin_Profile"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".user_Map"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".EmergencyCases"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Register_new_Agency"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".DIstrictAdminPage"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AdminPage"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".loginAsAdmin"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".FAQ"
             android:exported="false"
@@ -52,10 +63,7 @@
             android:name=".editProfile"
             android:exported="false"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".Precautionary_Measure"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+
         <activity
             android:name=".choose_disaster_type"
             android:exported="false"

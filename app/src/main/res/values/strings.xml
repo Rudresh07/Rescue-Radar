@@ -166,5 +166,6 @@
     <string name="faq_15_question"><b>Are there any offline features for use in areas with limited connectivity during disasters?</b></string>
     <string name="faq_15_answer">The app may include some offline features for basic functionality in areas with limited connectivity, but it primarily relies on an internet connection for real-time coordination.</string>
 
+    <string name="map_Api_Key" templateMergeStrategy = "preserve" translatable="false">AIzaSyBO-_MK2MdWQTPIm22lbduF2aul9QsYEvI</string>
 
 </resources>

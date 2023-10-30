@@ -9,7 +9,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/statusbar"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:backgroundTint="@color/button"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
